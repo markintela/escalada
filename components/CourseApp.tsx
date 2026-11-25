@@ -143,7 +143,7 @@ export default function CourseApp() {
             <div key={mi} className="stack" style={{ gap: 6 }}>
               <div style={{ display: 'flex', gap: 10, alignItems: 'baseline' }}>
                 <span className="mono" style={{ fontSize: 13, fontWeight: 600, color: '#9A3412' }}>{String(mi + 1).padStart(2, '0')}</span>
-                <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 600, fontSize: 17, lineHeight: 1.25 }}>{m.title}</span>
+                <span style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600, fontSize: 17, lineHeight: 1.25 }}>{m.title}</span>
               </div>
               <div style={{ fontSize: 13, lineHeight: 1.45, color: 'var(--soft)', paddingLeft: 28 }}>{m.desc}</div>
               <div className="stack" style={{ gap: 2, paddingLeft: 18 }}>

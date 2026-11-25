@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import LogoMark from '@/components/Logo';
 
 const LINKS = [
   { href: '/escalas', label: 'Escalas' },
@@ -14,7 +15,10 @@ export default function Nav() {
   return (
     <nav className="topnav" aria-label="Principal">
       <div className="topnav-inner">
-        <Link href="/" className="brand">Escalas no Violão</Link>
+        <Link href="/" className="brand">
+          <LogoMark size={40} />
+          escalada
+        </Link>
         <div className="navlinks">
           {LINKS.map((l) => (
             <Link key={l.href} href={l.href} className="navlink" aria-current={path === l.href ? 'page' : undefined}>

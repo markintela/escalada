@@ -273,7 +273,7 @@ export default function TheoryApp() {
                   style={{ minHeight: 108, background: F.tint, color: 'var(--ink)', border: d === sel ? '3px solid var(--ink)' : `1px solid ${F.border}` }}
                 >
                   <span className="mono" style={{ fontSize: 13, fontWeight: 600 }}>{x.roman}</span>
-                  <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: 26, fontWeight: 800 }}>{x.symbol}</span>
+                  <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 800 }}>{x.symbol}</span>
                   <span style={{ fontSize: 12, fontWeight: 600, padding: '2px 8px', borderRadius: 10, background: F.color, color: '#fff' }}>{F.name}</span>
                 </button>
               );
@@ -302,7 +302,7 @@ export default function TheoryApp() {
                         background: on ? F.color : F.tint, color: on ? '#fff' : 'var(--ink)', border: `2px solid ${on ? F.color : F.border}`,
                       }}
                     >
-                      <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: 22, fontWeight: 800 }}>{x.symbol}</span>
+                      <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 800 }}>{x.symbol}</span>
                       <span className="mono" style={{ fontSize: 12, fontWeight: 600 }}>{x.roman} · {x.f}</span>
                     </div>
                   );
@@ -326,7 +326,7 @@ export default function TheoryApp() {
 
       <section className="stack">
         <div className="between">
-          <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 600, fontSize: 20 }}>{boardTitle}</div>
+          <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600, fontSize: 20 }}>{boardTitle}</div>
           <div className="row">
             <span style={{ fontSize: 14, color: 'var(--muted)', marginRight: 8 }}>{boardHint}</span>
             <button type="button" className="chip" aria-pressed={orient === 'player'} onClick={() => setOrient('player')}>Visão do guitarrista</button>

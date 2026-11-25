@@ -89,7 +89,7 @@ export default function ScalesApp() {
       <header className="between" style={{ alignItems: 'flex-end' }}>
         <div className="stack" style={{ gap: 6 }}>
           <div className="kicker">Treino de escalas · afinação padrão E A D G B E</div>
-          <h1 className="display">Escalas no Violão</h1>
+          <h1 className="display">Escalas</h1>
         </div>
         <p className="lead" style={{ maxWidth: 460 }}>
           Escolha a tônica e a escala, veja as notas no braço e toque em qualquer bolinha para ouvir. Use as posições para estudar uma região de cada vez.
@@ -110,7 +110,7 @@ export default function ScalesApp() {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 20 }}>
             {CATS.map((c) => (
               <div key={c} className="stack" style={{ flex: '1 1 260px', gap: 8 }}>
-                <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 600, fontSize: 17 }}>{c}</div>
+                <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600, fontSize: 17 }}>{c}</div>
                 <div className="row">
                   {SCALES.filter((s) => s.cat === c).map((s) => (
                     <button key={s.id} type="button" className="chip" aria-pressed={s.id === sc.id} onClick={() => { reset(); setScaleId(s.id); if (pos > s.ints.length) setPos(0); }}>

@@ -1,4 +1,4 @@
-# Escalas no Violão
+# escalada · escalas de violão
 
 App em Next.js (App Router + TypeScript) com três telas interativas:
 
