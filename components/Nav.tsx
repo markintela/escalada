@@ -16,7 +16,7 @@ export default function Nav() {
     <nav className="topnav" aria-label="Principal">
       <div className="topnav-inner">
         <Link href="/" className="brand">
-          <LogoMark size={52} />
+          <LogoMark />
           escalada
         </Link>
         <div className="navlinks">

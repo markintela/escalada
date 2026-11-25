@@ -10,14 +10,12 @@ const SEGMENTS = [
   { x1: 170, y1: 115, x2: 220, y2: 165, color: '#1E8FCB' },
 ];
 
-export default function LogoMark({ size = 48 }: { size?: number }) {
-  // Em tamanhos pequenos, as cordas precisam de um traço mais grosso
-  // (em unidades do viewBox) para continuarem visíveis na tela.
-  const stringWidth = size < 80 ? 7 : 3;
+// O tamanho vem do CSS (.brand-mark), para mudar entre web e celular.
+export default function LogoMark({ className = 'brand-mark' }: { className?: string }) {
+  const stringWidth = 4;
   return (
     <svg
-      width={size}
-      height={Math.round((size * 190) / 240)}
+      className={className}
       viewBox="0 0 240 190"
       fill="none"
       strokeLinecap="round"
