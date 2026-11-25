@@ -43,9 +43,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2563eb; outline-offs
 .brand-tagline { font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--soft); }
 @media (max-width: 640px) {
   .brand { gap: 10px; }
-  .brand-mark { width: 72px; }
-  .brand-name { font-size: 28px; }
-  .brand-tagline { font-size: 10px; letter-spacing: 0.16em; }
+  .brand-mark { width: 92px; }
+  .brand-name { font-size: 34px; }
+  .brand-tagline { font-size: 11px; letter-spacing: 0.18em; }
 }
 .navlinks { display: flex; flex-wrap: wrap; gap: 8px; }
 .navlink {
