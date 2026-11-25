@@ -37,6 +37,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2563eb; outline-offs
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px;
 }
 .brand { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; color: var(--ink); text-decoration: none; }
+.brand:hover, .brand:active, .brand:visited { color: var(--ink); }
 .brand-mark { display: block; width: 96px; height: auto; flex-shrink: 0; }
 .brand-text { display: flex; flex-direction: column; gap: 4px; }
 .brand-name { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 36px; line-height: 1; letter-spacing: -0.03em; }
