@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 import LogoMark from '@/components/Logo';
 
 const LINKS = [
-  { href: '/escalas', label: 'Escalas' },
-  { href: '/curso', label: 'Curso de improviso' },
-  { href: '/teoria', label: 'Intervalos e funções' },
+  { href: '/escalas', label: 'Escalas', color: '#E8412C' },
+  { href: '/curso', label: 'Curso de improviso', color: '#EBB000' },
+  { href: '/teoria', label: 'Intervalos e funções', color: '#1E8FCB' },
 ];
 
 export default function Nav() {
@@ -24,7 +24,14 @@ export default function Nav() {
         </Link>
         <div className="navlinks">
           {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} className="navlink" aria-current={path === l.href ? 'page' : undefined}>
+            <Link
+              key={l.href}
+              href={l.href}
+              className="navlink"
+              aria-current={path === l.href ? 'page' : undefined}
+              style={{ '--dot': l.color } as React.CSSProperties}
+            >
+              <span className="navlink-dot" aria-hidden="true" />
               {l.label}
             </Link>
           ))}
