@@ -36,11 +36,16 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2563eb; outline-offs
   max-width: 1320px; margin: 0 auto; padding: 10px 20px;
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px;
 }
-.brand { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 32px; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; color: var(--ink); text-decoration: none; }
 .brand-mark { display: block; width: 96px; height: auto; flex-shrink: 0; }
+.brand-text { display: flex; flex-direction: column; gap: 4px; }
+.brand-name { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 36px; line-height: 1; letter-spacing: -0.03em; }
+.brand-tagline { font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--soft); }
 @media (max-width: 640px) {
-  .brand { font-size: 26px; gap: 10px; }
+  .brand { gap: 10px; }
   .brand-mark { width: 72px; }
+  .brand-name { font-size: 28px; }
+  .brand-tagline { font-size: 10px; letter-spacing: 0.16em; }
 }
 .navlinks { display: flex; flex-wrap: wrap; gap: 4px; }
 .navlink {

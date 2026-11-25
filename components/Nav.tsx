@@ -17,7 +17,10 @@ export default function Nav() {
       <div className="topnav-inner">
         <Link href="/" className="brand">
           <LogoMark />
-          escalada
+          <span className="brand-text">
+            <span className="brand-name">escalada</span>
+            <span className="brand-tagline">escalas de violão</span>
+          </span>
         </Link>
         <div className="navlinks">
           {LINKS.map((l) => (
