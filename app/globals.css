@@ -60,7 +60,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #2563eb; outline-offs
 .navlink[aria-current="page"] { background: var(--ink); border-color: var(--ink); color: #fff; }
 .navlink[aria-current="page"] .navlink-dot { box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18); }
 @media (max-width: 640px) {
-  .navlinks { gap: 6px; }
+  .topnav-inner { flex-direction: column; justify-content: center; gap: 10px; padding: 12px 16px; }
+  .navlinks { gap: 6px; justify-content: center; }
   .navlink { padding: 0 14px 0 12px; font-size: 15px; gap: 8px; }
 }
 
